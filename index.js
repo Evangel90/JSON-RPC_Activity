@@ -8,8 +8,8 @@ axios.post(ALCHEMY_URL, {
   id: 1,
   method: "eth_getBlockByNumber",
   params: [
-    "0xb443", // block 46147
-    false  // retrieve the full transaction object in transactions array
+    "0x5fed0866acb30c09b8fe3f2fe49bfa1e37743ce1",  //My wallet address
+    "latest" //
   ]
 }).then((response) => {
   console.log(response.data.result);
